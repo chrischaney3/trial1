@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Growth Rate</title>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <!--Materialize CSS Javascript Library-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="static/css/style.css" />
+        <style>
+          body {
+            background-color: white;
+          }
+          .jumbotron {
+            background: #15D1B2 linear-gradient(#399FE4, #CAFAE2);
+            background-size: 100% 100%;
+            overflow: auto;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }
+        </style>
+      <style>
+        .intro-text {
+          width: 875px;
+          overflow: auto;
+        }
+      </style>
+    </head>
+    <script src="pop_with_ev.json"></script>
+    <script src="growthLogic.js"></script>
+    <body>
+        <!--Jumbotron and GIF-->
+        <div class="container">
+          <div class="jumbotron" style="text-align:center">
+            <h2>Growth Rate By State</h2>
+            <style>
+              <h1> {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+              }
+            </style>
+              <img src="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2022/04/adoption_retarget1_em01_animation01_m_2x.gif" alt="Animated GIF" width="828" height="327">
+            </body>
+          </div>
+        </div>
+        <!--Tab Functions using materialize-->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+          <div class="container">
+            <div class="row">
+              <div class="col s12">
+                <!-- Tabs -->
+                <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+                    <li class="tab"><a target="_self" style="background-color: #399FE4; color: white" href="JavaScript_Library.html">Home</a>
+                    <li class="tab"><a target="_blank" style="background-color: #399FE4; color: white" href="/Map/map.html">Map</a></li>
+                    <li class="tab"><a target="_self" style="background-color: #399FE4; color: white" href="/pop_vs_alt_fuel/pop_vs_alt_fuel.html">EV Owners vs EV Stations</a></li>
+                    <li class="tab"><a target="_self" style="background-color: #399FE4; color: white" href="/gowthRate/growthChart.html">EV Growth Rate</a></li>
+                    <li class="tab"><a target="_self" style="background-color: #399FE4; color: white" href="/Plotly/Pie_graph.html">Types of Fuel</a></li>
+                    <li class="tab"><a target="_self" style="background-color: #399FE4; color: white" href="/Plotly/PublicVsPrivate.HTML">Public vs Private</a></li>
+                </ul>
+        <!--Introduction Paragraphs-->
+        <div>
+          <p>
+            <p id="myParagraph" class="intro-text" style="font-size: 18px;">    This graph is representation of EV charging stations growth. The size of the circles are represent the total amount of EV stations added since 2012.  </p>
+          </p>
+        </div>
+        <div id="myDiv"></div>
+        <script src="JavaScript_Library/app.js"></script>
+    </body>
+    </html>
+    (53 kB)
+    
